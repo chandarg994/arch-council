@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARCH-COUNCIL - Multi-Agent AI Solutions Architecture</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0b0f1a;color:#e2e8f0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;line-height:1.7}
+a{color:#6c8cff;text-decoration:none}
+.hero{background:linear-gradient(135deg,#0b0f1a,#111827);padding:80px 32px;text-align:center;border-bottom:1px solid #1e2d45}
+.badge{display:inline-block;background:#6c8cff22;border:1px solid #6c8cff44;color:#6c8cff;border-radius:20px;padding:4px 16px;font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px}
+h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:800;background:linear-gradient(135deg,#fff,#6c8cff);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px}
+.sub{font-size:1.1rem;color:#94a3b8;max-width:640px;margin:0 auto 28px}
+.pills{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:28px}
+.pill{background:#1a2236;border:1px solid #1e2d45;border-radius:20px;padding:5px 14px;font-size:12px;font-weight:500}
+.pill.b{border-color:#6c8cff55;color:#6c8cff}.pill.g{border-color:#34d39955;color:#34d399}.pill.p{border-color:#a78bfa55;color:#a78bfa}.pill.y{border-color:#fbbf2455;color:#fbbf24}
+.btn{display:inline-block;background:#6c8cff;color:#fff;border-radius:8px;padding:12px 28px;font-weight:600;font-size:14px;margin:4px}
+.btn.out{background:transparent;border:1px solid #6c8cff;color:#6c8cff}
+.wrap{max-width:1040px;margin:0 auto;padding:0 28px}
+section{padding:60px 0;border-bottom:1px solid #1e2d45}
+h2{font-size:1.6rem;font-weight:700;margin-bottom:6px}
+h2 span{color:#6c8cff}
+.sec-sub{color:#64748b;font-size:.9rem;margin-bottom:32px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fill,minmax(440px,1fr));gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.grid4{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px}
+.card{background:#131929;border:1px solid #1e2d45;border-radius:10px;padding:20px}
+.card h3{font-size:.95rem;margin-bottom:8px}
+.card p{font-size:13px;color:#94a3b8;line-height:1.6}
+.agent{background:#131929;border:1px solid #1e2d45;border-radius:10px;padding:18px;border-left:3px solid}
+.agent .icon{font-size:24px;margin-bottom:8px}
+.agent h3{font-size:.9rem;margin-bottom:3px}
+.agent .role{font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
+.agent .desc{font-size:12px;color:#94a3b8;line-height:1.6}
+.agent .model{display:inline-block;background:#ffffff08;border:1px solid #1e2d45;border-radius:4px;padding:2px 7px;font-size:10px;color:#64748b;font-family:monospace;margin-top:8px}
+.pipe{display:flex;align-items:center;gap:0;overflow-x:auto;padding:8px 0;margin-bottom:24px}
+.ps{background:#1a2236;border:1px solid #1e2d45;border-radius:8px;padding:14px 16px;min-width:150px;text-align:center;flex-shrink:0}
+.ps.hi{border-color:#6c8cff;background:#6c8cff0d}
+.ps .sn{font-size:10px;color:#64748b;text-transform:uppercase;margin-bottom:4px}
+.ps .st{font-weight:700;font-size:13px;margin-bottom:3px}
+.ps .sd{font-size:10px;color:#64748b}
+.pa{padding:0 8px;color:#334155;font-size:18px;flex-shrink:0}
+.code{background:#060b14;border:1px solid #1e2d45;border-radius:8px;padding:18px;font-family:monospace;font-size:12.5px;overflow-x:auto;color:#94a3b8}
+.c{color:#3d5068}.k{color:#6c8cff}.s{color:#34d399}
+table{width:100%;border-collapse:collapse;font-size:13px}
+th{background:#131929;padding:10px 14px;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:#64748b;border-bottom:1px solid #1e2d45}
+td{padding:10px 14px;border-bottom:1px solid #1e2d45}
+.ck{color:#34d399;font-weight:700}.cx{color:#f87171}
+footer{text-align:center;padding:48px 32px;color:#64748b;font-size:13px}
+</style>
+</head>
+<body>
+<div class="hero">
+<div class="badge">ARCH-COUNCIL</div>
+<h1>Multi-Agent AI Solutions Architecture</h1>
+<p class="sub">Six specialized AI architects debate your requirement. A Chairman synthesizes. A ratchet loop auto-refines until the score peaks. You get a TOGAF-aligned architecture document in minutes.</p>
+<div class="pills">
+<span class="pill b">Multi-Agent System</span>
+<span class="pill g">TOGAF ADM Compliant</span>
+<span class="pill p">Autonomous Ratchet Refinement</span>
+<span class="pill y">7 LLM Models in Parallel</span>
+</div>
+<a href="https://github.com/chandarg994/arch-council" class="btn">View on GitHub</a>
+<a href="https://github.com/chandarg994/arch-council#readme" class="btn out">README</a>
+</div>
+<div class="wrap">
+<section>
+<h2>What is <span>ARCH-COUNCIL</span>?</h2>
+<p class="sec-sub">Plain English</p>
+<div class="grid2">
+<div class="card"><h3>The Problem It Solves</h3><p>When a business needs an AI solution, someone has to figure out exactly how to build it: what systems, how they connect, what risks exist, how it fits the business. This is AI Solutions Architecture. Normally this takes weeks from expensive specialists. ARCH-COUNCIL does it in minutes.</p></div>
+<div class="card"><h3>The Two Ideas It Fuses</h3><p><strong style="color:#6c8cff">llm-council (Karpathy)</strong> - Run multiple AI models in parallel on the same problem. Let them review each other anonymously. Have a Chairman synthesise the best answer.<br><br><strong style="color:#34d399">autoresearch (Karpathy)</strong> - A ratchet loop: propose improvement, measure quality, keep only if score improves. Repeat until stuck. Only accepts upgrades.</p></div>
+</div>
+</section>
+<section>
+<h2><span>Pipeline</span> - 5 Stages</h2>
+<p class="sec-sub">From Submit to final architecture document</p>
+<div class="pipe">
+<div class="ps hi"><div class="sn">Stage 1</div><div class="st">Council</div><div class="sd">6 agents in parallel</div></div>
+<div class="pa">-&gt;</div>
+<div class="ps"><div class="sn">Stage 2</div><div class="st">Cross-Review</div><div class="sd">Anonymous peer review</div></div>
+<div class="pa">-&gt;</div>
+<div class="ps"><div class="sn">Stage 3</div><div class="st">Synthesis</div><div class="sd">Chairman unifies</div></div>
+<div class="pa">-&gt;</div>
+<div class="ps hi"><div class="sn">Stage 4</div><div class="st">Ratchet</div><div class="sd">Auto-improves score</div></div>
+<div class="pa">-&gt;</div>
+<div class="ps"><div class="sn">Stage 5</div><div class="st">Report</div><div class="sd">Final markdown doc</div></div>
+</div>
+<div class="card"><p>Scoring rubric (each 0-25, total 0-100): <strong style="color:#6c8cff">TOGAF Compliance</strong> + <strong style="color:#34d399">Technical Feasibility</strong> + <strong style="color:#a78bfa">Business Alignment</strong> + <strong style="color:#f472b6">Risk &amp; Governance</strong>. Ratchet keeps only improvements.</p></div>
+</section>
+<section>
+<h2>The 7 <span>AI Agents</span></h2>
+<p class="sec-sub">Each has a unique persona, domain, system prompt, and LLM model</p>
+<div class="grid3">
+<div class="agent" style="border-left-color:#6c8cff"><div class="icon">&#x1F3E2;</div><h3>Business Architect</h3><div class="role">TOGAF Phase B</div><div class="desc">Analyzes capabilities, value streams, operating model. Answers WHY the business needs this AI solution.</div><div class="model">claude-sonnet-4.5</div></div>
+<div class="agent" style="border-left-color:#34d399"><div class="icon">&#x1F5C4;</div><h3>Data Architect</h3><div class="role">TOGAF Phase C - Data</div><div class="desc">Designs data pipelines, RAG/embedding strategy, governance, GDPR/HIPAA compliance.</div><div class="model">gpt-4o</div></div>
+<div class="agent" style="border-left-color:#a78bfa"><div class="icon">&#x2699;</div><h3>Application Architect</h3><div class="role">TOGAF Phase C - App</div><div class="desc">Designs APIs, AI integration patterns (RAG vs fine-tune vs agents), orchestration, security.</div><div class="model">gemini-2.5-flash</div></div>
+<div class="agent" style="border-left-color:#fbbf24"><div class="icon">&#x2601;</div><h3>Technology Architect</h3><div class="role">TOGAF Phase D</div><div class="desc">Selects cloud, GPU infrastructure, MLOps tools, Kubernetes, and provides cost estimates.</div><div class="model">gpt-4o</div></div>
+<div class="agent" style="border-left-color:#f472b6"><div class="icon">&#x1F916;</div><h3>AI/ML Specialist</h3><div class="role">AI/ML Architecture</div><div class="desc">Selects AI pattern and specific models. Designs evaluation framework and AI safety measures.</div><div class="model">gpt-4o</div></div>
+<div class="agent" style="border-left-color:#f87171"><div class="icon">&#x1F6E1;</div><h3>Risk &amp; Governance</h3><div class="role">Architecture Governance</div><div class="desc">Identifies every risk - hallucination, vendor lock-in, GDPR, model drift - with severity and mitigations.</div><div class="model">gemini-2.5-flash</div></div>
+<div class="agent" style="border-left-color:#fbbf24"><div class="icon">&#x2697;</div><h3>Chairman (Orchestrator)</h3><div class="role">Chief Enterprise Architect</div><div class="desc">Most powerful agent. Reads all 6 opinions, resolves conflicts, produces unified draft, and scores each ratchet iteration.</div><div class="model">claude-opus-4.5</div></div>
+</div>
+</section>
+<section>
+<h2><span>Tech Stack</span></h2>
+<p class="sec-sub">Every technology, why it was chosen, how it fits</p>
+<div class="grid2">
+<div class="card"><h3>FastAPI (Python)</h3><p>Async-native backend - critical for running 6 LLM calls simultaneously without blocking. Background tasks let the pipeline run while the browser polls every 3 seconds.</p></div>
+<div class="card"><h3>React + Vite</h3><p>Live-updating frontend showing council opinions, ratchet score progression, and final report. Hot-reload during development. Single-page app polling the backend in real time.</p></div>
+<div class="card"><h3>OpenRouter</h3><p>Single API key accessing Claude, GPT-4o, and Gemini simultaneously. Essential for the multi-model council pattern without managing three separate credentials.</p></div>
+<div class="card"><h3>ChromaDB + Sentence Transformers</h3><p>Vector database storing 17 hand-crafted TOGAF and AI architecture documents. Semantic search retrieves relevant knowledge per agent query. Runs fully locally - no embedding API cost.</p></div>
+<div class="card"><h3>Mermaid.js</h3><p>Each agent includes a Mermaid diagram in their response. The frontend detects these and renders them as interactive flowcharts and deployment diagrams automatically.</p></div>
+<div class="card"><h3>Pydantic + JSON Sessions</h3><p>Each pipeline run is a typed Pydantic model saved as JSON to disk. Simple, portable state - no PostgreSQL or Redis required. UTF-8 atomic writes prevent race conditions.</p></div>
+</div>
+</section>
+<section>
+<h2><span>What You Get</span></h2>
+<p class="sec-sub">Concrete deliverables from every run</p>
+<div class="grid4">
+<div class="card"><h3>TOGAF Architecture Doc</h3><p>Full Business, Data, Application, Technology domain coverage - complete ADM scope.</p></div>
+<div class="card"><h3>Architecture Diagrams</h3><p>Each agent produces a Mermaid diagram for their domain. Chairman adds end-to-end overview.</p></div>
+<div class="card"><h3>Risk Register</h3><p>Every risk with severity, likelihood, and specific mitigation - AI, compliance, technical, strategic.</p></div>
+<div class="card"><h3>Implementation Roadmap</h3><p>Phased delivery: Foundation (0-3m), Core (3-6m), Scale (6-12m) with specific milestones.</p></div>
+<div class="card"><h3>AI Pattern Decision</h3><p>Explicit RAG vs fine-tuning vs agents recommendation with written justification for your use case.</p></div>
+<div class="card"><h3>Quality Score /100</h3><p>4-dimension score improving through the ratchet loop. See progression per iteration.</p></div>
+</div>
+</section>
+<section>
+<h2><span>Quick Start</span></h2>
+<p class="sec-sub">From zero to running in under 10 minutes</p>
+<div class="grid2">
+<div>
+<div class="code">
+<span class="c"># 1. Clone</span><br>
+git clone https://github.com/chandarg994/arch-council.git<br>
+cd arch-council<br><br>
+<span class="c"># 2. Add your OpenRouter key to .env</span><br><br>
+<span class="c"># 3. Setup (one time)</span><br>
+.\setup.ps1<br><br>
+<span class="c"># 4. Start</span><br>
+.\start.ps1<br><br>
+<span class="c"># 5. Open browser</span><br>
+<span class="s">http://localhost:5173</span>
+</div>
+</div>
+<div>
+<table>
+<thead><tr><th>Approach</th><th>Time</th><th>Multi-Model</th><th>Auto-Improve</th></tr></thead>
+<tbody>
+<tr><td><strong>ARCH-COUNCIL</strong></td><td style="color:#34d399">5-15 min</td><td class="ck">Yes - 7 models</td><td class="ck">Yes - Ratchet</td></tr>
+<tr><td>Single ChatGPT prompt</td><td style="color:#34d399">2 min</td><td class="cx">No - one model</td><td class="cx">No</td></tr>
+<tr><td>Human consultants</td><td style="color:#f87171">2-6 weeks</td><td class="ck">Yes - team</td><td class="ck">Yes - reviews</td></tr>
+<tr><td>Standard LangChain agent</td><td style="color:#34d399">3-10 min</td><td class="cx">No - one model</td><td class="cx">No</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+</div>
+<footer>
+<div style="font-size:28px;margin-bottom:12px">&#x1F3DB;</div>
+<div style="font-weight:700;color:#e2e8f0;margin-bottom:6px">ARCH-COUNCIL</div>
+<div>Multi-Agent AI Solutions Architecture &middot; Built on llm-council + autoresearch patterns by Karpathy</div>
+<div style="margin-top:8px">OpenRouter &middot; FastAPI &middot; React &middot; ChromaDB &middot; Mermaid &middot; Python</div>
+<div style="margin-top:16px"><a href="https://github.com/chandarg994/arch-council">github.com/chandarg994/arch-council</a></div>
+</footer>
+</body>
+</html>
